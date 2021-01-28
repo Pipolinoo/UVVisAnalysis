@@ -20,7 +20,7 @@ import matplotlib.dates as mdates
 
 
 
-PATH = 'UVVis/UVVisCell_Sample04_50nmSi_SolarGen/Potentiostate'
+PATH = 'UVVis/UVVisCell_Sample07_50nmSi_SolarGen/Potentiostate'
 EXT = '*.DTA'
 filterString = ''
 all_filenames = [file
@@ -35,6 +35,7 @@ skipRowsDict = {
 
 all_potentiostateFiles = []
 for filename in all_filenames[0:50]:
+    print(filename)
     now = None
     identifier = None
 
@@ -57,6 +58,7 @@ for filename in all_filenames[0:50]:
     all_potentiostateFiles.append(data)
 
     print(len(all_potentiostateFiles))
+
 
 for z, file in enumerate(all_potentiostateFiles):
     # file['intensity_smoothed'] = file['intensity'].rolling(200, win_type='nuttall').mean().shift(-100).fillna(1)
