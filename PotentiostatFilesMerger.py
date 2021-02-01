@@ -20,7 +20,7 @@ import matplotlib.dates as mdates
 
 
 
-PATH = 'UVVis/UVVisCell_Sample07_50nmSi_SolarGen/Potentiostate'
+PATH = './Data/01_28_2020/UVVisCell_Sample08_50nmSi_SolarGen/Potentiostate'
 EXT = '*.DTA'
 filterString = ''
 all_filenames = [file
